@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.toDo {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  margin: 8rem auto;
+  background: rgb(174, 149, 104);
+  padding: 15px 0 25px;
+  border-radius: 12px;
+}
+
+body {
+  background: #f5f3ff;
+}
+
+.toDo {
+  background: white;
+  box-shadow: 0 15px 35px rgba(124, 58, 237, .2);
+}
+
+.todoList p {
+  border-radius: 8px;
+}
+
+.todoList div:hover {
+  transform: translateX(3px);
+}
+
+.deleteBtn {
+  background: #ef4444;
+}
+
+.box {
+  width: 65%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  gap: 4px;
+}
+
+.box input {
+  flex: 1;
+  height: 38px;
+  border-radius: 6px;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  padding-left: 4px;
+}
+
+
+
+.box .btn {
+  width: 18%;
+  padding: 8px 12px;
+  background: #7c3aed;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn,
+.deleteBtn {
+  transition: background .3s ease, transform .2s ease;
+}
+
+.btn:hover,
+.deleteBtn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:hover {
+  background: #6a0fe0;
+}
+
+.box input,
+.todoList p {
+  box-shadow: 0 2px 8px rgba(124, 58, 237, .15);
+}
+
+.box input:focus {
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, .2);
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.todoList p {
+  text-align: left;
+  padding: 6px 4px;
+  margin: 12px 0px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
+.deleteBtn {
+  padding: 8px 8px;
+  border-radius: 6px;
+  border: none;
+  background: rgb(246, 16, 16);
+  color: white;
+  cursor: pointer;
+}
+
+.todoList div {
+  width: 65%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  margin: 12px auto;
+  transition: .25s ease;
+}
+
+h2 {
+  color: #7c3aed;
+  margin-bottom: 20px;
+}
+
+.box .btn {
+  height: 42px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+@media(max-width:768px) {
+  .todoList div {
+    width: 90%;
+  }
+
+  .box .btn,
+  .deleteBtn {
+    min-width: 60px;
+  }
+
+  .todoList .deleteBtn {
+    width: auto;
+    padding: 8px 12px;
+
+  }
+
+  .box .btn {
+    padding: 8px 12px;
+    width: auto;
+  }
+
+  .toDo {
+    width: 85%;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+
+}
