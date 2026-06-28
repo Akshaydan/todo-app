@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
   if (inEl.value.trim() === '') return;
   inEl.focus();
   let myInput = JSON.parse(localStorage.getItem('inputs')) || [];
-  // console.log(myInput);
+ 
   if (myInput.some(item => item.text === inEl.value.trim())) {
     inEl.value = "";
     return;
@@ -18,7 +18,7 @@ btn.addEventListener('click', () => {
     
   }
   myInput.push(task)
-  // myInput.push(inEl.value);
+  
   localStorage.setItem('inputs', JSON.stringify(myInput));
   createTask(task);
 
